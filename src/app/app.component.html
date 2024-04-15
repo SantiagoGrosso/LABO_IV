@@ -1,0 +1,25 @@
+{{title}}
+
+<br><br><br>
+
+<label for="edadUno">Edad Uno:</label>
+<input type="number" id="edadUno" [(ngModel)]="edadUno">
+
+<br><br>
+
+<label for="edadDos">Edad Dos:</label>
+<input type="number" id="edadDos" [(ngModel)]="edadDos">
+
+<br><br><br>
+
+<button (click)="Calcular()">
+  Calcular
+</button>
+<button (click)="Limpiar()">
+  Limpiar
+</button>
+
+<p>Promedio: {{ promedio }}</p>
+<p>Suma: {{ suma }}</p>
+
+<router-outlet />
